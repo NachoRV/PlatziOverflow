@@ -1,0 +1,7 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+   <mat-form-field class="example-full-width">
+         <textarea name="descripcion" ngModel matInput #first="ngModel" placeholder="RESPUESTA"></textarea>
+    </mat-form-field>
+   <button type="submit" mat-raised-button color="primary">Enviar</button>
+ </form>
