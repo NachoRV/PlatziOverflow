@@ -14,12 +14,13 @@ export class Question {
     descripcion: string,
     createdAt?: Date,
     icon?: String,
+
   ){
     this.titulo = titulo;
     this.descripcion = descripcion;
     this.createdAt = createdAt;
     this.icon = icon;
-    this.respuestas= [];
+    
   }
 
 }
