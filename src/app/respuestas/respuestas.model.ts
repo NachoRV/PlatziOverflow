@@ -4,7 +4,7 @@ export class User {
   constructor(
     public nombre: string,
     public apellidos: string
-  ){ }
+  ) { }
 }
 
 
@@ -14,5 +14,5 @@ export class Respuesta {
     public question: Question,
     public vreatedAt?: Date,
     public user?: User
-  ){ }
+  ) { }
 }

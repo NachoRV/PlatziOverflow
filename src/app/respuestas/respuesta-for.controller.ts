@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Respuesta , User } from './respuestas.model';
+import { Respuesta, User } from './respuestas.model';
 import { Question } from '../question/question.module';
 
 @Component({
@@ -19,19 +19,18 @@ import { Question } from '../question/question.module';
 
 })
 
-export class respuestaFormComponent{
+export class RespuestaFormComponent {
   @Input() pregunta: Question;
 
-  onSubmit(form: NgForm ){
+  onSubmit(form: NgForm ) {
 
     const respuesta = new Respuesta(
       form.value.descripcion,
       this.pregunta,
       new Date(),
-      new User('nacho','royo')
+      new User('nacho', 'royo')
     );
     this.pregunta.respuestas.unshift(respuesta);
     form.reset();
-
   }
 }

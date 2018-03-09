@@ -13,17 +13,17 @@
   <mat-card-actions>
   </mat-card-actions>
 </mat-card>
-<div class = "respuestas" *ngIf="question.respuestas.length > 0">
+<div class = "respuestas">
   <h3>Respuestas</h3>
-    <ul class="lisatrespuestas" >
-      <li >
+    <ul class="lisatrespuestas" *ngIf="question.respuestas.length  > 0">
+      <li *ngFor="let respuesta of question.respuestas">
+
           <h5>{{ respuesta.user.nombre }} {{ respuesta.user.apellidos }}
             <small>{{question.createdAt |  amLocale:'es'| amTimeAgo }}</small>
           </h5>
-          <p class="descripcion"> {{ respuesta.descripcion}}</p>
+          <p class="descripcion">{{ respuesta.descripcion }} </p>
       </li>
-
     </ul>
 </div>
-<p *ngIf="question.respuestas.length === 0"> Se el primero en responder</p>
+<p *ngIf="question.respuestas.length  === 0"> Se el primero en responder</p>
 <app-respuesta-form  [pregunta] = "question" class="aswer-form"></app-respuesta-form>

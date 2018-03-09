@@ -1,4 +1,4 @@
-import { Respuesta } from '../respuestas/respuestas.model';
+  import { Respuesta } from '../respuestas/respuestas.model';
 
 
 export class Question {
@@ -15,12 +15,13 @@ export class Question {
     createdAt?: Date,
     icon?: String,
 
-  ){
+  ) {
     this.titulo = titulo;
     this.descripcion = descripcion;
     this.createdAt = createdAt;
     this.icon = icon;
-    
+    this.respuestas = [];
+
   }
 
 }

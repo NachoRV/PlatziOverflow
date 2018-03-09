@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-//Material angular
+// Material angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import 'hammerjs';
 
 import { questionDetailComponent } from './question/question-detail.component';
-import { respuestaFormComponent } from './respuestas/respuesta-for.controller';
+import { RespuestaFormComponent } from './respuestas/respuesta-for.controller';
 
 import { MomentModule } from 'angular2-moment';
 import {MatInputModule} from '@angular/material/input';
@@ -19,7 +19,7 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     questionDetailComponent,
-    respuestaFormComponent
+    RespuestaFormComponent
   ],
   imports: [
     BrowserModule,
