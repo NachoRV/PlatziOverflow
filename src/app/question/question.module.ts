@@ -1,7 +1,7 @@
 import { Respuesta } from '../respuestas/respuestas.model';
 
 
-export class Question{
+export class Question {
 
   titulo: string;
   descripcion: string;

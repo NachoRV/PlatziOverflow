@@ -4,11 +4,13 @@
 }
 .respuestas{
   padding: 12px;
+  margin: 3px;
 
 }
 .lisatrespuestas{
   padding: 0px;
   list-style-type: none;
+  padding-bottom: 160px;
 
 }
 h5{
@@ -26,5 +28,17 @@ h5 small{
   border-left: 2px solid #eee;
   font-size: 14px;
   margin-top: 6px;
+
+}
+.aswer-form{
+
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 2;
+   background-color: white;
+   border-top: 1px solid #dcdcdc;
+   padding: 4px;
 
 }
