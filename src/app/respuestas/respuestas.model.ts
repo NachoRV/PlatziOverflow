@@ -1,11 +1,5 @@
 import { Question } from '../question/question.module';
-
-export class User {
-  constructor(
-    public nombre: string,
-    public apellidos: string
-  ) { }
-}
+import { User } from '../auth/user.model';
 
 
 export class Respuesta {

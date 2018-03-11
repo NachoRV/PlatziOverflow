@@ -8,7 +8,7 @@ import { Question } from './question.module';
   styleUrls: ['./question-detail.component.css'],
 })
 
-export class questionDetailComponent{
+export class QuestionDetailComponent {
   question: Question = new Question(
     'Esto es el titulo ',
     'La pregunata que planteamos ira aqui La pregunata que planteamos ira aqui La pregunata que planteamos ira aqui...',

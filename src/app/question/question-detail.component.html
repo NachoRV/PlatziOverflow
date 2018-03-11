@@ -18,7 +18,7 @@
     <ul class="lisatrespuestas" *ngIf="question.respuestas.length  > 0">
       <li *ngFor="let respuesta of question.respuestas">
 
-          <h5>{{ respuesta.user.nombre }} {{ respuesta.user.apellidos }}
+          <h5>{{ respuesta.user.fullName()}}
             <small>{{question.createdAt |  amLocale:'es'| amTimeAgo }}</small>
           </h5>
           <p class="descripcion">{{ respuesta.descripcion }} </p>
