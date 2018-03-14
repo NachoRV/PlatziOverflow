@@ -17,9 +17,9 @@ export class SignupScreenComponent implements OnInit {
       email: new FormControl(null, [
         Validators.required,
         Validators.pattern(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
-      ]),
-      password: new FormControl(null, Validators.required);
-    });
+      ])
+      // password: new FormControl(null, Validators.required);
+    })
   }
 
   onSubmit() {
