@@ -12,20 +12,20 @@ import 'hammerjs';
 import { QuestionDetailComponent } from './question/question-detail.component';
 import { RespuestaFormComponent } from './respuestas/respuesta-for.controller';
 import { SigninScreenComponent } from './auth/signin-screem.component';
-import { SingupScreenComponent } from './auth/singup-screen.Component';
+import { SignupScreenComponent } from './auth/singup-screen.Component';
 import { QuestionListComponent } from './question/question-list.component';
 import { QuestionFormComponent } from './question/question-form.component';
 
 import { MomentModule } from 'angular2-moment';
 import { MatInputModule } from '@angular/material/input';
-
+import { Routing } from './app.routing';
 @NgModule({
   declarations: [
     AppComponent,
     QuestionDetailComponent,
     RespuestaFormComponent,
     SigninScreenComponent,
-    SingupScreenComponent,
+    SignupScreenComponent,
     QuestionListComponent,
     QuestionFormComponent
   ],
@@ -37,6 +37,7 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
+    Routing
 
   ],
   providers: [],
